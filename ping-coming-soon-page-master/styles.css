@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap");
+:root {
+  --main-blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --grey: hsl(0, 0%, 59%);
+  --dark-blue: hsl(209, 33%, 12%);
+  --default-margin: 20px;
+}
+body {
+  font-size: 25px;
+}
+* {
+  font-family: "Libre Franklin", sans-serif;
+  box-sizing: border-box;
+}
+div {
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+/* upper section ************************** */
+.upper-section {
+  width: 100%;
+}
+.launch-message-container {
+  margin-bottom: 20px;
+}
+.main-launch-message {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.sub-launch-message {
+  font-size: 0.9rem;
+}
+#highlight {
+  font-weight: 700;
+}
+.register-email {
+  margin-bottom: 60px;
+}
+
+.register-email-form .email-input {
+  width: 20%;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: 1px solid #dbdbdb;
+}
+.register-email-form .email-input:focus {
+  outline: none;
+}
+.register-email-form .email-submit {
+  width: 10%;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: var(--main-blue);
+  color: #ffffff;
+  box-shadow: 0 3px 8px 0 hsla(223, 86%, 63%, 0.438);
+  cursor: pointer;
+}
+.register-email-form .email-submit:focus {
+  outline: none;
+}
+#error-message {
+  color: var(--light-red);
+  font-size: 0.7rem;
+  position: absolute;
+  left: 35%;
+  top: 44%;
+  display: none;
+}
+.error {
+  width: 20%;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: 1px solid var(--light-red);
+}
+/* lower section ************************** */
+.lower-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.lower-section .dashboard {
+  width: 40%;
+}
+.dashboard > #dashboard-image {
+  width: 100%;
+}
+.social-service {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.social-service i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  color: var(--main-blue);
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+}
+/* footer section ************************************ */
+footer {
+  margin-bottom: 20px;
+}
+.copy-right,
+.attribution {
+  text-align: center;
+  font-size: 0.5rem;
+  color: #5c5c5c;
+}

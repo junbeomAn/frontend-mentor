@@ -1,0 +1,38 @@
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 15px;
+  }
+  .main-launch-message {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .sub-launch-message {
+    font-size: 0.7rem;
+  }
+  .register-email > .register-email-form  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .register-email-form .email-input {
+    width: 70%;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+  }
+  .register-email-form .email-submit {
+    width: 70%;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background-color: var(--main-blue);
+    color: #ffffff;
+    box-shadow: 0 3px 8px 0 hsla(223, 86%, 63%, 0.438);
+    cursor: pointer;
+  }
+  .lower-section .dashboard {
+    width: 70%;
+  }
+}
