@@ -1,0 +1,32 @@
+@import '../styles.scss';
+
+@mixin small-size {
+  width: 100px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+.custom-button {
+  width: 180px;
+  border-radius: 30px;
+  background-color: $cyan;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+  &.sign-up {
+    @include small-size;
+    font-weight: 700;
+  }
+  &.shorten {
+    border-radius: 5px;
+  }
+  &.copied {
+    @include small-size;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,57 @@
+@import '../../styles.scss';
+
+.card {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  padding: 80px 20px 30px 30px;
+  background-color: #ffffff;
+  &:nth-child(2) {
+    top: 60px;
+  }
+  &:last-child {
+    top: 120px;
+  }
+  .icon {    
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 30px;
+    top: -40px; 
+    padding: 20px 20px;
+    border-radius: 50%;
+    background-color: $dark-blue;
+    .img {
+      position: absolute;
+      &.brand {
+        right: 19px;
+        top: 19px;
+      }
+      &.detail {
+        right: 19px;
+        top: 20px;
+      }
+      &.custom {
+        right: 16px;
+        top: 16px;
+      }
+    }
+  }
+  h3 {
+    color: $dark-blue;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    .icon {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:nth-child(2) {
+      top: 100px;
+    }
+    &:last-child {
+      top: 200px;
+    }
+  }
+}
