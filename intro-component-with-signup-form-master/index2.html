@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="./src/queries.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet ð -->
+  </head>
+  <body>
+    <div class="home">
+      <div class="section-left section">
+        <div class="left-text">
+          <p class="left-main-text">
+            Learn to code by <br />
+            watching others
+          </p>
+          <p class="left-sub-text">
+            See how experienced developers solve problems in real-time <br />
+            Watching scripted tutorials is great, but under standing how <br />
+            developers think is invaluable.
+          </p>
+        </div>
+      </div>
+      <div class="section-right section">
+        <div class="free-trial-msg">
+          <span id="highlight">Try it free 7 days</span> then $20/mo. thereafter
+        </div>
+        <div class="sign-up">
+          <form class="sign-up-form" id="sign-up-form">
+            <input
+              name="first-name"
+              type="text"
+              class="sign-up-input info"
+              placeholder="First Name"
+            />
+            <div class="error-icon">!</div>
+            <div class="error-message">
+              First Name cannot be empty
+            </div>
+            <input
+              name="last-name"
+              type="text"
+              class="sign-up-input info"
+              placeholder="Last Name"
+            />
+            <div class="error-icon">!</div>
+            <div class="error-message">
+              Last Name cannot be empty
+            </div>
+            <input
+              name="email"
+              type="email"
+              class="sign-up-input info"
+              placeholder="Email Address"
+            />
+            <div class="error-icon">!</div>
+            <div class="error-message">
+              Looks like this is not an email
+            </div>
+            <input
+              name="password"
+              type="password"
+              class="sign-up-input info"
+              placeholder="Password"
+            />
+            <div class="error-icon">!</div>
+            <div class="error-message">
+              Password Name cannot be empty
+            </div>
+            <button type="submit" class="submit-button sign-up-input">
+              claim your free trial
+            </button>
+          </form>
+          <div class="terms-services-agreement">
+            By clicking the button, you are agreeing to our
+            <span id="highlight">Terms and Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
