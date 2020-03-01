@@ -1,0 +1,136 @@
+@media screen and (max-width: 560px) {
+  .header-menu > ul > li {
+    margin-left: 0.8rem;
+    font-size: 0.8rem;
+  }
+  .header-menu > ul {
+    margin-top: 0;
+  }
+  .logo {
+    width: 40%;
+  }
+  .logo img {
+    width: 55%;
+  }
+  header {
+    padding: 30px 20px;
+    justify-content: space-around;
+  }
+  /*  */
+  .section-motto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .motto-img {
+    padding-right: 0;
+  }
+  .motto-text {
+    width: 90%;
+    padding-left: 0;
+  }
+  .motto-main-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header-menu > ul > li {
+    margin-left: 1rem;
+  }
+  /*  */
+  .main-intro-text {
+    font-size: 1.7rem;
+  }
+  .sub-intro-text {
+    font-size: 0.9rem;
+  }
+  /*  */
+  .section-product-features {
+    height: 1300px;
+  }
+  .section-product-features .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 70px;
+    width: 70%;
+  }
+
+  /*  */
+  .quotes {
+    left: 40px;
+  }
+  .section-motto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .motto-img {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .motto-text {
+    width: 90%;
+    padding-left: 0;
+  }
+  .motto-main-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  /*  */
+  .section-feedback {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-feedback > .container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  /*  */
+  .box-send-email {
+    width: 90%;
+    height: 400px;
+    left: 5%;
+    top: -200px;
+    padding: 1.8rem 1.2rem;
+  }
+  .box-send-email p:first-child {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .send-email {
+    width: 90%;
+    display: block;
+    margin-top: 0;
+  }
+  .send-email input {
+    width: 100%;
+  }
+  .send-email button {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /*  */
+  footer {
+    padding-bottom: 0;
+    padding-top: 19rem;
+  }
+  footer .upper .container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+    width: 90%;
+  }
+  footer .upper .container .column:last-child {
+    justify-content: center;
+  }
+  .lower p,
+  .lower p a {
+    font-size: 0.7rem;
+  }
+}
