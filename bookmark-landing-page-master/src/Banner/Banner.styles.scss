@@ -1,0 +1,95 @@
+@import '../styles.scss';
+
+section.banner {  
+    width: 100%;
+    height: 400px;
+    background-color: $soft-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & > :not(:last-child) {
+      margin-bottom: 40px;
+    }
+    .member-count {
+      color: white;
+      letter-spacing: 6px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      // margin-bottom: 
+    }
+    .invite-msg {
+      color: white;
+      width: 40%;
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+    }
+    .contact {
+      display: flex;
+      width: 40%;
+      height: 75px;
+      justify-content: space-between;
+      font-weight: 500;
+      .input-container {
+        width: 65%;
+        height: 100%;
+        position: relative;
+        padding: 2px 2px 25px 2px;
+        background-color: transparent;
+        border-radius: 5px;
+        input[type=email] {
+          width: 100%;          
+          height: 50px;
+          padding: 10px 15px;
+          font-size: 0.8rem;
+          border: 2px solid transparent;
+          border-radius: 5px;
+        }
+        .error-icon {
+          display: none;
+          position: absolute;
+          top: 20%;
+          right: 5%;
+          &.active {
+            display: block;
+          }
+        }
+        .error-msg {
+          display: none;
+          position: absolute;
+          bottom: 6%;
+          left: 5%;
+          font-size: 0.6rem;
+          font-style: italic;
+          font-weight: 400;
+          color: white;
+          white-space: nowrap;
+          &.active {
+            display: block;
+          }
+        }
+        &.error {
+          background-color: $soft-red;
+        }
+
+      }
+      button {
+        width: 30%;;
+        height: 50px;
+        padding: 10px 15px;
+        background-color: $soft-red;
+        color: white;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        transition: .15s ease-in-out;
+        &:hover {
+          background-color: white;
+          border-color: $soft-red;
+          color: $soft-red;
+        }
+      }
+    }
+  
+}

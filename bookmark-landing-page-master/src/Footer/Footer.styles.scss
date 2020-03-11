@@ -1,0 +1,57 @@
+@import '../styles.scss';
+
+footer {
+  background-color: $very-dark-blue;
+  padding: 20px 0;
+  .container {    
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    .logo {
+      path {
+        fill: white;
+      }      
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: auto 0;
+      &.nav-footer {
+        justify-content: space-between;
+        li {
+          color: white;
+          text-transform: uppercase;
+          cursor: pointer;
+          font-size: 0.8rem;
+          &:hover {
+            color: $soft-red;
+          }
+        }
+      }
+      &.social-icons {
+        padding: 0;
+        li {
+          &:first-child {
+            margin-right: 30px;
+          }          
+          .icon {
+            path {
+              &:hover {
+                fill: $soft-red;
+              }
+            }            
+          }
+        }
+      }
+    }
+    
+  }
+  p.attribution {
+    margin-top: 30px;
+    color: white;
+    a {
+      color: white;
+      font-weight: 500;
+    }
+  }
+  
+}

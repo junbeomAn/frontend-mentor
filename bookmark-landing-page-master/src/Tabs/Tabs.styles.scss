@@ -1,0 +1,27 @@
+@import '../styles.scss';
+
+.features {
+  .container {
+    .feature-tabs {
+      justify-content: center;
+      border-bottom: none;
+      margin-bottom: 30px;
+      li {
+        border-bottom: 1px solid rgba(214, 214, 214, 0.849); 
+        a {
+          border: none;
+          font-size: 0.8rem;
+          padding: 15px 35px;
+          cursor: pointer;
+          &.active {
+            border-bottom: 3px solid $soft-red;
+            font-weight: 500;
+          }
+          &:hover {
+            color: $soft-red;
+          }
+        }        
+      }
+    }
+  }
+}

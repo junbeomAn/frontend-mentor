@@ -1,0 +1,72 @@
+@import '../styles.scss';
+
+.download {
+  height: 700px;
+  .container {
+    .text {
+      margin-bottom: 50px;
+      .main-text, .sub-text {
+        text-align: center;
+      }
+      .sub-text {
+        color: gray;
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 4px 11px rgba(214, 214, 214  , 0.849);
+        position: relative;
+        &:nth-child(2) {
+          top: 30px;
+        }
+        &:last-child {
+          top: 60px;
+        }
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+        
+        svg {
+          &:first-child {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 22.5px;
+          }          
+        }
+        .dot-line {
+          width: 100%;
+        }
+        h5 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          color: gray;
+          font-size: 0.9rem;
+        }
+        .custom-button {
+          background-color: $soft-blue;
+          border: 2px solid transparent;
+          font-size: 0.65rem;
+          white-space: nowrap;
+          padding: 10px 23px;
+          font-weight: 500;
+          margin-left: 50%;
+          transform: translateX(-50%);
+          &:hover {
+            background-color: white;
+            border: 2px solid $soft-blue;
+            color: $soft-blue;
+          }
+        }
+      }
+      
+    }
+  }
+}

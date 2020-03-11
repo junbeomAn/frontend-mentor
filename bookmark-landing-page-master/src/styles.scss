@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+
+$grayish-blue: hsl(229, 8%, 60%);
+$very-dark-blue: hsl(229, 31%, 21%);
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+$soft-gray:rgba(214, 214, 214, 0.849);
+.App {
+  font-family: sans-serif;
+  
+}
+body {
+  box-sizing: border-box;
+}
+* {
+  font-family: 'Rubik', sans-serif;
+}
+html {
+  font-size: 18px;
+}

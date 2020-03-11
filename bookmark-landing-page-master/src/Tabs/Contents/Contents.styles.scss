@@ -1,0 +1,45 @@
+@import '../../styles.scss';
+
+.features {
+  .container {
+    .tab-content {
+      height: 500px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      .image {
+        background-color: rgb(240, 240, 240);
+      }
+      div.shape {
+        width: 550px;
+        height: 300px;
+        background: $soft-blue;
+        position: absolute;
+        border-bottom-right-radius: 110px;
+        z-index: -1;
+        bottom: 5%;
+        left: -7%;
+      }
+      .card {
+        border: none;
+        .card-text {
+          color: gray;
+        }
+        .custom-button {
+          width: 40%;
+          background-color: $soft-blue;
+          color: white;
+          font-size: 0.7rem;          
+          transition: .15s ease-in-out;
+          border: 2px solid transparent;
+          font-weight: 500;
+          &:hover {
+            background-color: white;
+            color: $soft-blue;
+            border: 2px solid $soft-blue;
+          }
+        }
+      }
+    }
+  }
+}

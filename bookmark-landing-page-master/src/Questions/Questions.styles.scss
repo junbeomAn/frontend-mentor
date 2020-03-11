@@ -1,0 +1,79 @@
+@import '../styles.scss';
+
+section.questions {
+  margin-bottom: 80px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text {
+      width: 60%;
+      h3, p {
+        text-align: center;
+      }
+      p {
+        width: 90%;
+        margin: 20px auto 50px auto;
+        color: gray;
+      }
+    }
+    .list {
+      width: 60%;
+      margin-bottom: 50px;
+      ul {
+        width: 100%;
+        padding-left: 0;
+        .question {          
+          list-style-type: none;
+          padding: 20px 20px 20px 0;
+          border-bottom: 1px solid $soft-gray; 
+          &:first-child {
+            border-top: 1px solid $soft-gray; 
+          }          
+          .title {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+            cursor: pointer;
+            i {
+              &.closed {
+                color: $soft-blue;
+              }
+              &.opened {
+                color: $soft-red;
+              }
+            }
+            &:hover {
+              color: $soft-red;
+            }
+          }
+          .card-body {
+            padding-left: 0;
+            padding-right: 0;
+            line-height: 200%;
+          }          
+        }
+      }
+    }
+    .custom-button {
+        background-color: $soft-blue;
+        border: 2px solid transparent;
+        font-size: 0.65rem;
+        white-space: nowrap;
+        padding: 13px 22px;
+        font-weight: 500;
+        color: white;
+        border-radius: 5px;
+        transition: .15s ease-in-out;
+        letter-spacing: 1px;
+        &:hover {
+          background-color: white;
+          border: 2px solid $soft-blue;
+          color: $soft-blue;
+        }
+        &:focus {
+          outline: none;
+        }
+    }
+  }
+}
